@@ -16,6 +16,11 @@ public class RNFirebaseCrashlyticsPackage implements ReactPackage {
   public RNFirebaseCrashlyticsPackage() {
   }
 
+  @Override
+  public List<Class<? extends JavaScriptModule>> createJSModules() {
+    return Collections.emptyList();
+  }
+
   /**
    * @param reactContext react application context that can be used to create modules
    * @return list of native modules to register with the newly created catalyst instance
